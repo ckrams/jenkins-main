@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: jenkins
-        image: gcr.io/google-samples/gb-frontend:v5
+        image: jenkins/jenkins:jdk21
         ports:
         - containerPort: 8080
           name: httpport
