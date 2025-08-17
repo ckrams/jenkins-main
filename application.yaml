@@ -1,18 +1,17 @@
-apiVersion: argoproj.io/v1alpha1
+kapiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: vpro-app
-  namespace: argocd
+  name: jenkins-app
+  namespace: default
 spec:
-  project: default
+  project: jenkins-app
 
   source:
     repoURL: https://github.com/ckrams/jenkins-main.git
-    targetRevision: HEAD
-    path: helm/vprofilecharts
+    targetRevision: main
   destination: 
     server: https://kubernetes.default.svc
-    namespace: prod
+    namespace: default
 
   syncPolicy:
     syncOptions:
