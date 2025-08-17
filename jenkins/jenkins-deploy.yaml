@@ -16,4 +16,10 @@ spec:
       - name: jenkins
         image: jenkins/jenkins:jdk21
         ports:
-        - containerPort: 80
+        - containerPort: 8080
+          name: httpport
+          protocol: TCP
+        - containerPort: 50000
+          name: jnlpport
+          protocol: TCP
+
