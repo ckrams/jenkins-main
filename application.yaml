@@ -2,16 +2,16 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: jenkins-app
-  namespace: default
+  namespace: argocd
 spec:
-  project: jenkins-app
+  project: jenkins
 
   source:
     repoURL: https://github.com/ckrams/jenkins-main.git
-    targetRevision: main
+    targetRevision: HEAD
   destination: 
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: jenkins
 
   syncPolicy:
     syncOptions:
