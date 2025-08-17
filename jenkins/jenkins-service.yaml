@@ -4,7 +4,7 @@ metadata:
   name: jenkins-svc
   namespace: argocd
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: jenkins
   ports:
