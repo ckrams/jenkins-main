@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: jenkins
-        image: jenkins/jenkins:jdk21
+        image: nginx:1.14.2
         ports:
         - containerPort: 8080
           name: httpport
