@@ -12,7 +12,7 @@ spec:
     path: jenkins
   destination: 
     server: https://kubernetes.default.svc
-    namespace: jenkins
+    namespace: prod
 
   syncPolicy:
     syncOptions:
