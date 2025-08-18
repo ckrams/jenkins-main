@@ -25,7 +25,7 @@ spec:
           name: jnlpport
           protocol: TCP
       - name: ansible
-        image: alpine/ansible
+        image: librespace/ansible
         ports:
         - containerPort: 8080
           name: httpport
