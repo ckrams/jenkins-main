@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: jenkins
-        image: jenkins/jenkins:jdk21
+        image: ckrams/jenkins-ansible:latest
         ports:
         - containerPort: 8080
           name: httpport
