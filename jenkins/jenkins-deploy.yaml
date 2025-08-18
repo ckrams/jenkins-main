@@ -24,13 +24,4 @@ spec:
         - containerPort: 50000
           name: jnlpport
           protocol: TCP
-      - name: ansible
-        image: librespace/ansible
-        ports:
-        - containerPort: 8080
-          name: httpport
-          protocol: TCP
-        - containerPort: 50000
-          name: jnlpport
-          protocol: TCP
 
